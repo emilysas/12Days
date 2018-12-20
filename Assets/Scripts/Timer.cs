@@ -9,9 +9,11 @@ public class Timer : MonoBehaviour {
     public Text textBox;
 	public Text ScoreText;
 	public List<Text> DayScores = new List<Text>();
+	public GameObject StartButton;
 
 	void Start () {
         textBox.text = timeLeft.ToString();
+		Time.timeScale = 0;
 	}
 	
 	// Update is called once per frame
@@ -21,8 +23,9 @@ public class Timer : MonoBehaviour {
 			Score.CalculateBonus();
 			GameObject.Find("ScoreGameOverText").GetComponent<Text>().text = "Game Over";
 			GameObject.Find("ScoreGameOver").GetComponent<Text>().text = Score.Total().ToString();
-			GameObject.Find("Music").GetComponent<AudioSource>().Stop();
-			Time.timeScale = 0;
+			// StartButton.SetActive(true);
+			var music = GameObject.Find("Music").GetComponent<AudioSource>();
+			StartCoroutine(FadeOut(music, 50f));
         }
 		else {
 			timeLeft -= Time.deltaTime;
@@ -41,5 +44,21 @@ public class Timer : MonoBehaviour {
 			});
 		}
 	}
+
+	public void ClickStart() {
+		Time.timeScale = 1;
+		StartButton.SetActive(false);
+		GameObject.Find("Music").GetComponent<AudioSource>().Play();
+	}
+
+	public static IEnumerator FadeOut(AudioSource audioSource, float FadeTime) {
+        float startVolume = audioSource.volume;
+        while (audioSource.volume > 0) {
+            audioSource.volume -= startVolume * Time.deltaTime / FadeTime;
+            yield return null;
+        }
+        audioSource.Stop();
+		Time.timeScale = 0;
+    }
  
 }

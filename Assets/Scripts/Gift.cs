@@ -42,7 +42,7 @@ public class Gift : MonoBehaviour {
 			// destroy this
 			Debug.Log("Got present");
 			Score.Add(_dayNumber);
-
+			GameObject.Find("CollectSound").GetComponent<AudioSource>().Play();
 			if (Score.DayScores[5] == 5 && Settings.PlayJustin) {
 				Debug.Log("Playing Justin");
 				var justin = GameObject.Find("Justin").GetComponent<AudioSource>();
