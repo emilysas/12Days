@@ -53,6 +53,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Gift.cs" />
+     <Compile Include="Assets\Scripts\GiftSpawner.cs" />
      <Compile Include="Assets\Scripts\MoveSleigh.cs" />
      <Compile Include="Assets\Scripts\Settings.cs" />
      <Compile Include="Assets\Scripts\Snowflake.cs" />
