@@ -5,25 +5,52 @@ using UnityEngine;
 public class Gift : MonoBehaviour {
 
 	private float _speed;
+	private int _dayNumber;
+	
 
 	void Awake()
 	{
-		_speed = Random.Range(0.5f, 1.5f);
+		_speed = Random.Range(2.5f, 5f);
 	}
 	// Use this for initialization
 	
 
 	void Start () {
 		transform.position = new Vector3(Random.Range(-14.9f, 14.9f), 7, -2);
-		var num = Random.Range(0, 11);
+		if(Random.Range(1, 4) == 1){
+			_dayNumber = 5;
+		} else {
+			_dayNumber = Random.Range(1, 12);
+		}
 		var presents = Resources.LoadAll<Sprite> ("presents");
-		gameObject.GetComponent<SpriteRenderer>().sprite = presents[num];
+		gameObject.GetComponent<SpriteRenderer>().sprite = presents[_dayNumber-1];
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		transform.position -= transform.up * Time.deltaTime * _speed;
 		if (transform.position.y < -10) {
+			Destroy(gameObject);
+		}
+	}
+
+	void OnCollisionEnter2D(Collision2D other)
+	{
+		if (other.gameObject.tag == "Sleigh") {
+			// Increment counters
+			// play sound if complete
+			// destroy this
+			Debug.Log("Got present");
+			Score.Add(_dayNumber);
+
+			if (Score.DayScores[5] == 5 && Settings.PlayJustin) {
+				Debug.Log("Playing Justin");
+				var justin = GameObject.Find("Justin").GetComponent<AudioSource>();
+				justin.Play();
+				var justinSprite = GameObject.Find("JustinSprite").GetComponent<Justin>().CanMove = true;
+				Settings.PlayJustin = false;
+			}
+
 			Destroy(gameObject);
 		}
 	}

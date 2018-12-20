@@ -14,7 +14,6 @@ public class MoveSleigh : MonoBehaviour
     void Update()
     {
         if(Input.GetKey(KeyCode.RightArrow)) {
-            Debug.Log("Right arrow: " + transform.position.x);
             if(transform.position.x <= Settings.RightBoundary) {
                 transform.Translate(Vector3.right * Time.deltaTime * 10);
                 transform.Rotate(0,0,15 * Time.deltaTime);
@@ -22,7 +21,6 @@ public class MoveSleigh : MonoBehaviour
         }
         
         if(Input.GetKey(KeyCode.LeftArrow)) {
-            Debug.Log("Left arrow: " + transform.position.x);
             if(transform.position.x >= Settings.LeftBouundary) {
                 transform.Translate(Vector3.left * Time.deltaTime * 10);
                 transform.Rotate(0,0,-15 * Time.deltaTime);
