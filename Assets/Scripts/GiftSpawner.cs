@@ -12,7 +12,7 @@ public class GiftSpawner : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-		if (Time.frameCount % Random.Range(15, 50) == 0) {
+		if (Time.frameCount % Random.Range(15, 45) == 0) {
 			Instantiate(GiftPrefab);
 		}
 	}
