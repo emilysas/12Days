@@ -1,0 +1,229 @@
+fileFormatVersion: 2
+guid: 15dff10680bcf554d830ecded6c180eb
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: CATRigLLeg1
+    100002: CATRigLLeg1 1
+    100004: CATRigLLeg2
+    100006: CATRigLLeg2 1
+    100008: CATRigLLegAnkle
+    100010: CATRigLLegAnkle 1
+    100012: CATRigLLegPlatform
+    100014: CATRigLLegPlatform 1
+    100016: CATRigRLeg1
+    100018: CATRigRLeg1 1
+    100020: CATRigRLeg2
+    100022: CATRigRLeg2 1
+    100024: CATRigRLegAnkle
+    100026: CATRigRLegAnkle 1
+    100028: CATRigRLegPlatform
+    100030: CATRigRLegPlatform 1
+    100032: CATRigScull001
+    100034: CATRigScull002
+    100036: CATRigScull003
+    100038: CATRigSpine
+    100040: CATRigSpine1
+    100042: CATRigSpine2
+    100044: //RootNode
+    100046: reindeer
+    100048: Character001
+    400000: CATRigLLeg1
+    400002: CATRigLLeg1 1
+    400004: CATRigLLeg2
+    400006: CATRigLLeg2 1
+    400008: CATRigLLegAnkle
+    400010: CATRigLLegAnkle 1
+    400012: CATRigLLegPlatform
+    400014: CATRigLLegPlatform 1
+    400016: CATRigRLeg1
+    400018: CATRigRLeg1 1
+    400020: CATRigRLeg2
+    400022: CATRigRLeg2 1
+    400024: CATRigRLegAnkle
+    400026: CATRigRLegAnkle 1
+    400028: CATRigRLegPlatform
+    400030: CATRigRLegPlatform 1
+    400032: CATRigScull001
+    400034: CATRigScull002
+    400036: CATRigScull003
+    400038: CATRigSpine
+    400040: CATRigSpine1
+    400042: CATRigSpine2
+    400044: //RootNode
+    400046: reindeer
+    400048: Character001
+    2100000: 'Material #37'
+    2100002: 'Material #39'
+    2100004: 'Material #41'
+    2100006: 'Material #38'
+    2100008: 'Material #40'
+    4300000: reindeer
+    7400000: animWalk
+    7400002: animRun
+    9500000: //RootNode
+    13700000: reindeer
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #37'
+    second: {fileID: 2100000, guid: 515848c6a4f28694895e18cdc79df32d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #38'
+    second: {fileID: 2100000, guid: 03c42b6a8e707de45a7b8d36e41d0db0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #39'
+    second: {fileID: 2100000, guid: 27aed49b1a8da6848a1c03e2fdccfc23, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #40'
+    second: {fileID: 2100000, guid: 03c42b6a8e707de45a7b8d36e41d0db0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #41'
+    second: {fileID: 2100000, guid: 52b168b693e58954cbd033bb385ca24c, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: animWalk
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 100
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: animRun
+      takeName: Take 001
+      firstFrame: 100
+      lastFrame: 200
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.0254
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
