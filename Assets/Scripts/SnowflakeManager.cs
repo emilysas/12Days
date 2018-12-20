@@ -15,7 +15,6 @@ public class SnowflakeManager : MonoBehaviour {
 	{
 		if (Time.frameCount % 15 == 0) {
 			//spawn new snowflake
-			var snowflake = new Snowflake();
 			Instantiate(Snowflake);
 		}
 	}
